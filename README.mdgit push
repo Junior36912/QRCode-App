@@ -1,11 +1,11 @@
 # QR Code Scanner App
 
-Este é um aplicativo de leitura de QR Code desenvolvido em React Native. O aplicativo permite que os usuários escaneem códigos QR, visualizem o conteúdo escaneado, salvem os dados e gerenciem uma lista de códigos escaneados. Além disso, oferece funcionalidades como copiar conteúdo para a área de transferência e excluir dados.
+Este é um aplicativo de leitura de QR Code desenvolvido em React Native. O aplicativo permite que os usuários escaneiem códigos QR, visualizem o conteúdo escaneado, salvem os dados escaneados e gerenciem uma lista de códigos escaneados. Além disso, oferece funcionalidades como copiar conteúdo para a área de transferência e deletar dados.
 
 ## Funcionalidades
 
 - **Escanear QR Codes**: Utiliza a câmera do dispositivo para escanear códigos QR
-- **Armazenamento Local**: Salva dados escaneados usando AsyncStorage
+- **Salvamento Local**: Armazena dados escaneados usando AsyncStorage
 - **Gerenciamento de Lista**: Visualize, copie e exclua itens individualmente
 - **Limpeza Total**: Opção para deletar todos os dados de uma vez
 - **Alternância de Câmera**: Troque entre câmera frontal e traseira
@@ -31,6 +31,7 @@ Este é um aplicativo de leitura de QR Code desenvolvido em React Native. O apli
 ## Estrutura do Código
 
 O projeto está organizado em um único componente principal (`app.tsx`) com:
+
 - Gerenciamento de estado para dados escaneados
 - Controle de navegação entre telas
 - Lógica de permissões da câmera
@@ -43,3 +44,24 @@ O projeto está organizado em um único componente principal (`app.tsx`) com:
 - `react-native-popup-menu`: Menus contextuais
 - `expo-clipboard`: Manipulação de área de transferência
 
+## Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/qr-code-scanner-app.git
+```
+
+2. Instale as dependências:
+```bash
+cd qr-code-scanner-app && npm install
+```
+
+3. Inicie o servidor:
+```bash
+npm start
+```
+
+4. Escaneie o QR Code com o app Expo Go (dispositivo físico)
+
+## Contribuição
+Contribuições são bem-vindas! Reporte issues ou envie pull requests com melhorias.
