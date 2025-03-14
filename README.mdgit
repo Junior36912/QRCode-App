@@ -48,7 +48,7 @@ O projeto está organizado em um único componente principal (`app.tsx`) com:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/qr-code-scanner-app.git
+git clone https://github.com/Junior36912/QRCode-App.git
 ```
 
 2. Instale as dependências:
