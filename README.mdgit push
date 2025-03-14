@@ -1,0 +1,75 @@
+# QR Code Scanner App
+
+Este é um aplicativo de leitura de QR Code desenvolvido em React Native. O aplicativo permite que os usuários escaneiem códigos QR, visualizem o conteúdo escaneado, salvem os dados escaneados e gerenciem uma lista de códigos escaneados. Além disso, o aplicativo oferece funcionalidades como copiar o conteúdo escaneado para a área de transferência e deletar dados individuais ou todos os dados salvos.
+
+## Funcionalidades
+
+- **Escanear QR Codes**: O aplicativo utiliza a câmera do dispositivo para escanear códigos QR.
+- **Salvar Dados Escaneados**: Os dados escaneados são salvos localmente no dispositivo.
+- **Lista de Dados Escaneados**: Os usuários podem visualizar uma lista de todos os códigos QR escaneados.
+- **Copiar Conteúdo**: O conteúdo escaneado pode ser copiado para a área de transferência.
+- **Deletar Dados**: Os usuários podem deletar dados individuais ou todos os dados salvos.
+- **Alternar Câmera**: O aplicativo permite alternar entre a câmera traseira e frontal.
+
+## Como Usar
+
+### Tela Inicial
+Ao abrir o aplicativo, você verá a tela inicial com duas opções: "Escanear" e "Lista dos Escaneados".
+
+### Escanear QR Code
+Selecione "Escanear" para abrir a câmera e escanear um código QR. O conteúdo escaneado será exibido na tela e automaticamente salvo.
+
+### Lista de Dados Escaneados
+Selecione "Lista dos Escaneados" para visualizar todos os códigos QR escaneados. Aqui, você pode copiar o conteúdo ou deletar dados individuais.
+
+### Deletar Todos os Dados
+Na tela de lista, há um botão para deletar todos os dados salvos. Um alerta de confirmação será exibido antes de deletar.
+
+## Estrutura do Projeto
+
+O projeto é composto por um único arquivo `app.tsx` que contém toda a lógica e interface do usuário. Abaixo está uma breve descrição das principais partes do código:
+
+- **MainAppComponent**: Componente principal que gerencia o estado do aplicativo e renderiza as diferentes telas (início, escanear, lista).
+- **useCameraPermissions**: Hook do Expo Camera para gerenciar permissões da câmera.
+- **AsyncStorage**: Utilizado para salvar e carregar os dados escaneados localmente.
+- **MenuProvider e Menu**: Componentes da biblioteca `react-native-popup-menu` para criar menus de contexto.
+
+## Dependências
+
+O projeto utiliza as seguintes bibliotecas:
+
+- **expo-camera**: Para acessar e utilizar a câmera do dispositivo.
+- **@react-native-async-storage/async-storage**: Para salvar e carregar dados localmente.
+- **react-native-popup-menu**: Para criar menus de contexto.
+
+## Instalação
+
+Para rodar o projeto localmente, siga os passos abaixo:
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/qr-code-scanner-app.git 
+  ```
+
+2. Navegue até o diretório do projeto:
+
+```bash
+cd qr-code-scanner-app
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Inicie o servidor de desenvolvimento:
+
+```bash
+npm start
+```
+5. Escaneie o QR Code exibido no terminal com o aplicativo Expo Go no seu dispositivo móvel.
+
+## Contribuição
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
